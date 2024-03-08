@@ -13,8 +13,7 @@ app.use("/api/user",userRouter)
 const googleRouter=require('./routes/googleRouter')
 app.use("/",googleRouter)
 const PORT=process.env.PORT||port;
-const videoRouter=require('./routes/videoRouter')
-app.use("/",videoRouter)
+
 require('./db')
 const passport = require('passport');
 const MongoStore = require('connect-mongo');
